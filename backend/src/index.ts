@@ -75,7 +75,7 @@ app.get('/api/users', async (req: Request, res: Response) => {
     }
 
     const users: any[] = [];
-    snapshot.forEach((doc) => {
+    snapshot.forEach((doc: any) => {
       users.push({
         id: doc.id,
         ...doc.data(),
@@ -83,6 +83,39 @@ app.get('/api/users', async (req: Request, res: Response) => {
     });
 
     res.json({ users });
+  } catch (error) {
+    console.error('Error fetching users:', error);
+    res.status(500).json({ error: 'Failed to fetch users' });
+  }
+});
+
+// Get all users (POST - with optional filtering)
+app.post('/api/users/list', async (req: Request, res: Response) => {
+  try {
+    const { search } = req.body;
+
+    let query: any = db.collection('users');
+
+    // If search term provided, filter by username or email
+    if (search && typeof search === 'string') {
+      query = query.where('username', '>=', search).where('username', '<=', search + '\uf8ff');
+    }
+
+    const snapshot = await query.get();
+
+    if (snapshot.empty) {
+      return res.json({ users: [], total: 0 });
+    }
+
+    const users: any[] = [];
+    snapshot.forEach((doc: any) => {
+      users.push({
+        id: doc.id,
+        ...doc.data(),
+      });
+    });
+
+    res.json({ users, total: users.length });
   } catch (error) {
     console.error('Error fetching users:', error);
     res.status(500).json({ error: 'Failed to fetch users' });
@@ -157,7 +190,7 @@ app.get('/api/agents', async (req: Request, res: Response) => {
     }
 
     const agents: any[] = [];
-    snapshot.forEach((doc) => {
+    snapshot.forEach((doc: any) => {
       agents.push({
         id: doc.id,
         ...doc.data(),
