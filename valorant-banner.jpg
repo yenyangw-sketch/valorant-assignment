@@ -1,0 +1,282 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    line-height:1.6;
+    color:#000000;
+    background:#ffffff;
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+a{
+    text-decoration:none;
+}
+
+ul{
+    list-style:none;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:20px 60px;
+    background:#111111;
+}
+.logo h1{
+    color:#ff4655;
+    font-size:28px;
+}
+
+nav ul{
+    display:flex;
+    gap:25px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+nav a:hover{
+    color:rgb(255, 0, 0);
+}
+
+/*dropdown*/
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background: #111111;
+    padding: 10px;
+    list-style: none;
+    top: 100%; /* 在主菜单下方 */
+    left: 0;
+    min-width: 180px;
+    border-radius: 5px;
+}
+
+.dropdown-menu li a {
+    color: white;
+    display: block;
+    padding: 8px 12px;
+}
+
+.dropdown-menu li a:hover {
+    background: #ff4655;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.hero{
+    height:300px;
+    background:
+    linear-gradient(
+    rgba(0,0,0,0.6),
+    rgba(0,0,0,0.6)
+    ),
+    url("valorant-banner.jpg");
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+}
+
+
+.hero-content h1{
+    color:white;
+    font-size:60px;
+}
+
+
+.hero-content p{
+    color:white;
+    font-size:22px;
+    margin:20px 0;
+}
+
+.button{
+    display:inline-block;
+    background:#ff4655;
+    color:white;
+    padding:12px 30px;
+    border-radius:5px;
+    font-weight:bold;
+}
+
+
+.button:hover{
+    background:#d93645;
+}
+
+.home-content{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:30px;
+    padding:50px 80px;
+}
+
+.about,
+.events,
+.news,
+.gallery{
+    background:#f5f5f5;
+    padding:30px;
+    border-radius:10px;
+}
+
+.join{
+    text-align:center;
+    padding:60px;
+    background:#6b63634a;
+    color:#111111;
+}
+
+footer{
+    background:#111111;
+}
+
+
+.footer-container{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    padding:40px 80px;
+}
+
+
+.footer-about,
+.footer-links,
+.footer-social{
+    flex:1;
+}
+
+
+.footer-container h3{
+    color:#ff4655;
+    margin-bottom:15px;
+}
+
+
+.footer-container p,
+.footer-container a{
+    color:white;
+}
+
+
+.footer-container a:hover{
+    color:#ff4655;
+}
+
+@media (max-width:768px){
+    .home-content{
+        grid-template-columns:1fr;
+        padding:30px;
+    }
+    nav ul{
+        flex-direction:column;
+        gap:15px;
+    }
+}
+
+/*page 2 fuction*/
+.about-content, .about-content2, .about-content3 {
+    background:#f5f5f5;
+    padding:30px;
+    border-radius:10px;
+    margin:20px 80px;
+}
+
+.aboutus{
+    height:200px;
+    background:#111111;
+  
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+}
+
+.about-header{
+    color:white;
+    font-size:30px;
+}
+
+.about-content{
+    text-align: center; 
+    margin: 0 auto;      
+    max-width: 600px;   
+    padding: 30px;
+    border-radius: 10px;  
+}
+
+.about-content2{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px; 
+    padding: 40px 80px;
+}
+
+.about-content2 div{
+    background: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center; 
+}
+
+/*page 3 function*/
+.mission-header {
+    height:200px;
+    background:#111111;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:#ffffff;
+    font-size:30px;
+    margin-bottom:10px; 
+}
+
+
+.mission-vision-objective {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    padding: 40px 80px;
+}
+
+.mission, .vision, .objectives, .commitment {
+    background: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.commitment img {
+    max-width: 100%;
+    margin-top: 15px;
+    border-radius: 10px;
+}

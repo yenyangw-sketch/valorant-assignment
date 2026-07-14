@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <footer>
+        <div class="footer-container">
+    <div class="footer-about">
+      <h3>APU Valorant Club</h3>
+      <p>© 2026</p>
+    </div>
+    <div class="footer-links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="club-rules.html">RULES</a></li>
+        <li><a href="events.html">EVENTS</a></li>
+        <li><a href="gallery.html">GALLERY</a></li>
+        <li><a href="registration.html">REGISTER</a></li>
+      </ul>
+    </div>
+    <div class="footer-social">
+      <h3>Follow Us</h3>
+      <a href="#">Instagram</a><br>
+      <a href="#">YouTube</a><br>
+      <a href="#">Discord</a>
+    </div>
+  </div>
+    </footer>
+</body>
+</html>
