@@ -1,0 +1,42 @@
+<link rel="stylesheet" href="style.css">
+<header>
+  <div class="logo">
+    <h1>APU Valorant Club</h1>
+  </div>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">HOME</a></li>
+
+      <li class="dropdown">
+        <a href="about.html">ABOUT ▾</a>
+        <ul class="dropdown-menu">
+          <li><a href="about.html">ABOUT US</a></li>
+          <li><a href="mission.html">MISSION, VISION & OBJECTIVES</a></li>
+        </ul>
+      </li>
+
+      <li class="dropdown">
+        <a href="club-rules.html">RULES ▾</a>
+        <ul class="dropdown-menu">
+          <li><a href="club-rules.html">CLUB RULES</a></li>
+          <li><a href="valorant-rules.html">VALORANT RULES</a></li>
+        </ul>
+      </li>
+
+      <li><a href="equipment.html">EQUIPMENT</a></li>
+      <li><a href="events.html">EVENTS</a></li>
+      <li><a href="gallery.html">GALLERY</a></li>
+      <li><a href="registration.html">REGISTERATION</a></li>
+
+      <li class="dropdown">
+        <a href="enquiry.html">CONTACT ▾</a>
+        <ul class="dropdown-menu">
+          <li><a href="enquiry.html">ENQUIRY</a></li>
+          <li><a href="feedback.html">FEEDBACK</a></li>
+        </ul>
+      </li>
+
+    </ul>
+  </nav>
+</header>
