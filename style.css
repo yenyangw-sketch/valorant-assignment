@@ -61,7 +61,7 @@ nav a:hover {
   background: #111111;
   padding: 10px;
   list-style: none;
-  top: 100%; /* 在主菜单下方 */
+  top: 100%;
   left: 0;
   min-width: 180px;
   border-radius: 5px;
