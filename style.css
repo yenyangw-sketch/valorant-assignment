@@ -61,7 +61,7 @@ nav a:hover {
   background: #111111;
   padding: 10px;
   list-style: none;
-  top: 100%; /* 在主菜单下方 */
+  top: 100%;
   left: 0;
   min-width: 180px;
   border-radius: 5px;
@@ -401,4 +401,178 @@ footer {
   grid-column: 1/3;
   width: 45%;
   justify-self: center;
+}
+
+/*page 7 function*/
+.events-page {
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 20px;
+
+  display: flex;
+  gap: 40px;
+}
+
+/*left side*/
+.upcoming-events {
+  flex: 1;
+}
+
+/*right side*/
+.past-events {
+  flex: 1;
+}
+
+/*events card*/
+.event-card {
+  background: white;
+
+  border-radius: 10px;
+
+  padding: 20px;
+
+  margin-bottom: 25px;
+
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.1);
+}
+
+/*hover*/
+.event-card:hover {
+  transform: translateY(-5px);
+
+  transition: 0.3s;
+}
+
+/*card images*/
+.event-card img {
+  width: 100%;
+
+  height: 180px;
+
+  object-fit: cover;
+
+  border-radius: 8px;
+
+  margin-bottom: 15px;
+}
+@media (max-width: 768px) {
+  .events-page {
+    flex-direction: column;
+  }
+}
+.upcoming-events h2 {
+  color: #2e8b57;
+}
+
+.past-events h2 {
+  color: #ff4655;
+}
+
+/*page 8 function*/
+.news-container {
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 20px;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 30px;
+}
+.news-card {
+  background: white;
+
+  border-radius: 10px;
+
+  overflow: hidden;
+
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.1);
+}
+.news-card img {
+  width: 100%;
+
+  height: 220px;
+
+  object-fit: cover;
+}
+.news-card h3 {
+  padding: 20px 20px 10px;
+}
+.news-date {
+  color: #ff4655;
+
+  font-size: 20px;
+
+  margin: 0 20px;
+}
+.news-card p {
+  padding: 0 20px;
+}
+/*hover*/
+.news-card:hover {
+  transform: translateY(-5px);
+
+  transition: 0.3s;
+}
+/*page 9 function*/
+.gallery-container {
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 20px;
+
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 20px;
+}
+.gallery-item img {
+  width: 100%;
+
+  height: 250px;
+
+  object-fit: cover;
+
+  border-radius: 10px;
+}
+.gallery-item {
+  overflow: hidden;
+
+  border-radius: 10px;
+}
+.gallery-item img {
+  transition: 0.3s;
+}
+.gallery-item:hover img {
+  transform: scale(1.05);
+}
+/*page 10 function*/
+.registration-container {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 20px;
+}
+.registration-form {
+  flex: 2;
+  margin-left: -50px;
+}
+.membership {
+  flex: 1;
+}
+input,
+select {
+  width: 100%;
+
+  padding: 8px;
+
+  margin-bottom: 18px;
+}
+.submit-btn {
+  background: #ff4655;
+
+  color: white;
 }

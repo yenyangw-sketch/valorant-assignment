@@ -3,14 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <title>Registration - APU Valorant Club</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div id="nav-placeholder"></div>
-<div id="footer-placeholder"></div>
-<script src="navBar.js"></script>
-<script src="footer.js"></script>
+    <!-- 1. Navbar placeholder goes at the very top of the body -->
+    <div id="nav-placeholder"></div>
+
+    <!-- 2. Main registration form content goes in the middle -->
+    <main class="registration-container">
+        <div class="registration-card">
+            <h2>Join the Agent Roster</h2>
+            <p>Sign up below to join the official APU Valorant Club, participate in tournaments, and find scrims.</p>
+            
+            <form action="#" method="POST" class="registration-form">
+                <div class="form-group">
+                    <label for="username">Full Name</label>
+                    <input type="text" id="username" name="username" placeholder="e.g., Sattish Pratap" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Student Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="e.g., tp012345@mail.apu.edu.my" required>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="riotid">Riot ID</label>
+                        <input type="text" id="riotid" name="riotid" placeholder="e.g., Jett#APU" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="rank">Current Rank</label>
+                        <select id="rank" name="rank">
+                            <option value="unrated">Unrated</option>
+                            <option value="iron-silver">Iron - Silver</option>
+                            <option value="gold-plat">Gold - Platinum</option>
+                            <option value="diamond-ascendant">Diamond - Ascendant</option>
+                            <option value="immortal-radiant">Immortal - Radiant</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="role">Primary In-Game Role</label>
+                    <select id="role" name="role">
+                        <option value="duelist">Duelist (Entry)</option>
+                        <option value="initiator">Initiator (Info/Flash)</option>
+                        <option value="controller">Controller (Smokes)</option>
+                        <option value="sentinel">Sentinel (Defense)</option>
+                        <option value="flex">Flex (Fill any role)</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="submit-btn">LOCK IN</button>
+            </form>
+        </div>
+    </main>
+
+    <!-- 3. Footer placeholder goes at the bottom -->
+    <div id="footer-placeholder"></div>
+
+    <!-- 4. Dynamic Script Injectors always go right before the closing body tag -->
+    <script src="navBar.js"></script>
+    <script src="footer.js"></script>
 
 </body>
 </html>
