@@ -5,11 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Club Rules - APU Valorant Club</title>
     <link rel="stylesheet" href="style.css" />
-  </head>
+    
+    <style>
+      /* Locks the background to show the WHOLE image, uncropped and unscrollable */
+      html, body {
+        background-color: #0f1923 !important; /* Valorant dark background color to fill any extra side gaps smoothly */
+        background-image: url('Tyler_waylay_.jpg') !important;
+        background-size: 100vw 100vh !important; /* Forces the image to exactly match the width and height of the screen */
+        background-position: center center !important;
+        background-attachment: fixed !important;
+        background-repeat: no-repeat !important;
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+      }
 
+      /* Clean transparent text banner - completely removes any lingering gray/white box highlights */
+      .page-banner {
+        background: transparent !important;
+        background-color: transparent !important;
+        margin: 50Spx auto 10px auto !important;
+        padding: 10px !important;
+        text-align: center;
+      }
+
+      /* High-contrast white text with a drop shadow so it remains sharp against the art */
+      .page-banner h1 {
+        color: #ffffff !important;
+        font-size: 2.5rem;
+        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+        margin: 0 !important;
+      }
+
+      .page-banner p {
+        color: #dddddd !important;
+        text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+        margin: 5px 0 0 0 !important;
+      }
+
+      /* Keeps the rules grid clear so it sits nicely over the background layer */
+      .rules-container {
+        background: transparent !important;
+        background-color: transparent !important;
+      }
+    </style>
   <body>
     <div id="nav-placeholder"></div>
 
+    <!-- The Title Section is now a sharp white box with black text -->
     <section class="page-banner">
       <h1>Club Rules</h1>
       <p>Home / Rules / Club Rules</p>
