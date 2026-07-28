@@ -1,16 +1,61 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feedback - APU Valorant Club</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="nav-placeholder"></div>
+    <section class="page-banner">
+      <h1>Feedback</h1>
+      <p>Home / Contact / Feedback</p>
+    </section>
+    <main class="feedback-container">
+      <section class="feedback-form">
+        <h2>Your Feedback</h2>
+        <form>
+          <label>Full Name *</label>
+          <input type="text" required />
 
-<div id="nav-placeholder"></div>
-<div id="footer-placeholder"></div>
-<script src="navBar.js"></script>
-<script src="footer.js"></script>
+          <label>Email Address *</label>
+          <input type="email" required />
 
-</body>
+          <label>Overall Experience</label>
+
+          <label>Rate Your Experience</label>
+
+          <input type="radio" name="rating" /> ★
+
+          <input type="radio" name="rating" /> ★★
+
+          <input type="radio" name="rating" /> ★★★
+
+          <input type="radio" name="rating" /> ★★★★
+
+          <input type="radio" name="rating" /> ★★★★★
+          <br />
+          <label>Suggestions</label>
+          <br />
+
+          <textarea rows="6"></textarea>
+
+          <button type="submit" class="button2">Submit Feedback</button>
+        </form>
+      </section>
+      <aside class="feedback-info">
+        <p><b>Thank you for sharing your feedback.</b></p>
+        <p>
+          Your opinions help us improve our club activities and provide a better
+          experience for all members.
+        </p>
+        <p>We appreciate your support!</p>
+        <img src="" alt="Valorant team" />
+      </aside>
+    </main>
+    <div id="footer-placeholder"></div>
+    <script src="navBar.js"></script>
+    <script src="footer.js"></script>
+  </body>
 </html>
